@@ -1,0 +1,25 @@
+{
+    "resourceName": "lex5ff50862",
+    "botName": "firstTest",
+    "intents": [
+        {
+            "slots": [
+                {
+                    "name": "subject",
+                    "type": "AMAZON.FinancialService",
+                    "prompt": "what subject ? ",
+                    "required": true,
+                    "customType": false
+                }
+            ],
+            "utterances": [
+                "Search on google"
+            ],
+            "intentName": "SearchIntent",
+            "newSlotTypes": []
+        }
+    ],
+    "outputVoice": "Joanna",
+    "sessionTimeout": 5,
+    "coppa": false
+}

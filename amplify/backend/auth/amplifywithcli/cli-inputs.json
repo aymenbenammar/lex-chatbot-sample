@@ -1,0 +1,12 @@
+{
+  "version": "1",
+  "cognitoConfig": {
+    "identityPoolName": "amplifywithcli_identitypool_47e3e157",
+    "allowUnauthenticatedIdentities": true,
+    "authSelections": "identityPoolOnly",
+    "resourceName": "amplifywithcli",
+    "sharedId": "47e3e157",
+    "serviceName": "Cognito",
+    "useDefault": "manual"
+  }
+}

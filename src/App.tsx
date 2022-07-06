@@ -1,25 +1,43 @@
-import React from 'react';
-import logo from './logo.svg';
+import React,  {useState}  from 'react';
 import './App.css';
+import '@aws-amplify/ui-react/styles.css';
+import '@fontsource/inter/variable.css';
+import { Amplify , Auth } from 'aws-amplify';
+import { AmplifyChatbot } from '@aws-amplify/ui-react/legacy';
+
+window.Buffer = window.Buffer || require("buffer").Buffer;
+
+
+Amplify.configure({
+  Auth: {
+    identityPoolId: 'xxxx',
+    region: 'us-east-1'
+  },
+  Interactions: {
+    bots: {
+      BookTrip: {
+        name: 'BookTrip',
+        alias: '$LATEST',
+        region: 'us-east-1'
+      }
+    }
+  }
+});
 
 function App() {
+
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+   
+        <AmplifyChatbot
+    botName="BookTrip"
+    botTitle="aaaa"
+    welcomeMessage="Hello, how can I help you?"
+    voiceEnabled={true}	
+  />
+            </div>
+
   );
 }
 
