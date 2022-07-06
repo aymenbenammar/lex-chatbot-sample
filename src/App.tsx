@@ -12,7 +12,7 @@ window.Buffer = window.Buffer || require("buffer").Buffer;
 
 Amplify.configure({
   Auth: {
-    identityPoolId: 'us-east-1:c647c422-16b9-41ed-b16f-ba3f18b46c9c',
+    identityPoolId: 'xxxx',
     region: 'us-east-1'
   },
   Interactions: {
