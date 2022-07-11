@@ -38,7 +38,7 @@
 }
 #chatCon{
   width:35%;
-  position:absolute;
+  position:fixed;
   bottom:1%;
   right:2%;
 }
@@ -47,13 +47,17 @@
   width: 100%;
   height: 610px;
   border-radius: 10px;
-  background-color: #8d969d7a;
-  border: solid 2px #ff9900;
+
+  border: solid 2px #099ac8;
+
 }
-
-
-
-
+amplify-chatbot{
+  --width : 100%;
+}
+.icon amplify-icon {
+  --icon-fill-color: #099ac8;
+  --height: var(--icon-height);
+}
 #chatCon .pop {
   width: 100%;
   height: 25%;
